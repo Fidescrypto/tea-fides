@@ -15,8 +15,45 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
-    </html>
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEX Crypto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>DEX Crypto</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Trade</a></li>
+                <li><a href="#">Wallet</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="trade-section">
+            <h2>Trade</h2>
+            <!-- Trade form and market information go here -->
+        </section>
+
+        <section id="wallet-section">
+            <h2>Wallet</h2>
+            <!-- Wallet balance and transaction history go here -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 DEX Crypto. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
   );
 }
